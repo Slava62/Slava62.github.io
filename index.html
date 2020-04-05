@@ -9,13 +9,16 @@
 <title>My web page</title>
  
 <!-- Bootstrap -->
-<!-- <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
- --> <!-- Мой CSS файл
+ <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+ <!-- Мой CSS файл
 -->
  <link href="css/styles.css" type="text/css" rel="stylesheet">
-
+ <!--simplebox-->
+<link href="simplebox/simplebox.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="simplebox/simplebox.js"></script>
 <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+ 
  
 <!--  <style>
 .col-lg-12, .col-lg-3, .col-lg-4, .col-lg-8, .col-md-12, .col-md-3, .col-md-4, .col-md-8, .col-sm-12, .col-sm-3, .col-sm-4, .col-sm-8, .col-xs-12
@@ -55,14 +58,14 @@ height: auto;
 
 <!-- Brand and toggle get grouped for better mobile display -->
 <div class="navbar-header" >
-
+<a href="https://slava62.github.io/index.html" class="navbar-brand">Slava62.github.io</a>
 <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
 <span class="sr-only">Toggle navigation</span>
 <span class="icon-bar"></span>
 <span class="icon-bar"></span>
 <span class="icon-bar"></span>
 </button>
-<!-- <a href="https://slava62.github.io/index.html" class="navbar-brand">Slava62.github.io</a> -->
+
 </div>
 
 <!-- Collection of nav links and other content for toggling -->
@@ -100,11 +103,12 @@ height: auto;
 <div class="tab-content">
 
 <div class="tab-pane active fade in" id="home">
-<div class="heading col-lg-12 col-md-12 col-sm-12 col-xs-12"><h2>Главная страница</h2></div>
+<div class="heading"><div class=" col-lg-12 col-md-12 col-sm-12 col-xs-12"><h2>Главная страница</h2></div></div>
 
 <div class="row">
 <div class="col-md-4">
- <img src="images/myPic/IMG_20200313_114835.jpg" alt="myPhoto"  class="thumbnail"></div>
+<a rel="simplebox" href="images/myPic/IMG_20200313_114835.jpg">
+<img src="images/myPic/IMG_20200313_114835.jpg" alt="myPhoto"  class="thumbnail"></a></div>
 <div class="col-md-8">
 <p class="lead">Я, Вячеслав Фролов, в 2006 году с отличием завершил обучение по специальности
 "Технология машиностроения" в Рязанском институте (филиале) Московского Государственного Открытого Университета.</p>
@@ -116,8 +120,119 @@ height: auto;
 </div>
 
 
-<div class="tab-pane fade" id="obo_mne"><h2>Обучение в GeekBrains</h2></div>
-<div class="tab-pane fade" id="development"> <h2>Разработка</h2> </div>
+<div class="tab-pane fade" id="obo_mne"><div class="heading"><div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><h2>Обучение в GeekBrains</h2></div></div>
+<div class="row">
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+<p class="lead">Я выбрал факультет "Тестирования ПО", так как изучение данного предмета охватывает практически все этапы
+жизненного цикла программного обеспечения.</p>
+</div></div>
+<div class="row">
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+
+<!--Certificates slide-->
+
+<div id="myCarousel" class="carousel slide " data-interval="3000" data-ride="carousel" >
+<!-- Индикаторы для карусели -->
+<ol class="carousel-indicators">
+<!-- Перейти к 0 слайду карусели с помощью соответствующего индекса data-slide-to="0" -->
+<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+<!-- Перейти к 1 слайду карусели с помощью соответствующего индекса data-slide-to="1" -->
+<li data-target="#myCarousel" data-slide-to="1"></li>
+<!-- Перейти к 2 слайду карусели с помощью соответствующего индекса data-slide-to="2" -->
+<li data-target="#myCarousel" data-slide-to="2"></li>
+<!-- Перейти к 3 слайду карусели с помощью соответствующего индекса data-slide-to="3" -->
+<li data-target="#myCarousel" data-slide-to="3"></li>
+<!-- Перейти к 4 слайду карусели с помощью соответствующего индекса data-slide-to="4" -->
+<li data-target="#myCarousel" data-slide-to="4"></li>
+<!-- Перейти к 5 слайду карусели с помощью соответствующего индекса data-slide-to="5" -->
+<li data-target="#myCarousel" data-slide-to="5"></li>
+</ol>
+<!-- Слайды карусели -->
+<div class="carousel-inner" >
+<!-- Слайды создаются с помощью контейнера с классом item, внутри которого помещается содержимое слайда -->
+<!-- Слайд №0 -->
+<div class="active item b-img" >
+ <a rel="simplebox" href="images/certificates/Testing.png">
+<img src="images/certificates/Testing.png" class="center-img"></a>
+
+
+</div>
+<!-- Слайд №1 -->
+
+<div class="item b-img" >
+  <a rel="simplebox" href="images/certificates/TestingPr.png">
+<img src="images/certificates/TestingPr.png" class="center-img"></a>
+
+
+</div>
+<!-- Слайд №2 -->
+
+<div class="item b-img" >
+  <a rel="simplebox" href="images/certificates/JavaBase.png">
+<img src="images/certificates/JavaBase.png" class="center-img"></a>
+
+
+</div>
+ <!-- Слайд №3 -->
+
+<div class="item b-img" >
+  <a rel="simplebox" href="images/certificates/DataBase.png">
+<img src="images/certificates/DataBase.png" class="center-img"></a>
+
+
+</div>
+ <!-- Слайд №4 -->
+<div class="item b-img" >
+  <a rel="simplebox" href="images/certificates/Android.png">
+<img src="images/certificates/Android.png" class="center-img"></a>
+
+
+</div>
+ <!-- Слайд №5 -->
+<div class="item b-img" >
+  <a rel="simplebox" href="images/certificates/Git.png">
+<img src="images/certificates/Git.png" class="center-img"></a>
+
+
+</div>
+<!-- сюда добавляем еще код слайдера-->
+ 
+</div>
+<!-- Навигация для карусели -->
+<!-- Кнопка, осуществляющая переход на предыдущий слайд с помощью атрибута data-slide="prev" -->
+<a class="carousel-control left" href="#myCarousel" data-slide="prev">
+<span class="glyphicon glyphicon-chevron-left"></span>
+</a>
+<!-- Кнопка, осуществляющая переход на следующий слайд с помощью атрибута data-slide="next" -->
+<a class="carousel-control right" href="#myCarousel" data-slide="next">
+<span class="glyphicon glyphicon-chevron-right"></span>
+</a>
+</div>
+
+</div>
+</div>
+</div>
+
+<div class="tab-pane fade" id="development">
+<div class="heading"><div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><h2>Проекты C#</h2></div>
+</div>
+<div class="row">
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+<h3>Программа DrillSplitter</h3>
+<div class="col-md-4">
+<a rel="simplebox" href="images/image001.png">
+<img width="300" src="images/image001.png" alt="DrillSplitter"  class="thumbnail center-img" ></a></div>
+<div class="col-md-8">
+  <p class="lead">
+В процессе сверления большого количества отверстий на станках с ЧПУ возникает задача останова выполнения управляющей программы станка и выхода в определенную позицию для контроля состояния сверла. Современные CAM-системы не всегда позволяют вставить блоки кода для разбиения управляющей программы (УП) станка, поэтому их приходится вставлять вручную. В том случае, когда УП рассчитана на 1000 — 2000 отверстий, и выход нужно осуществлять каждые 50 отверстий, а также таких УП много, возникает задача автоматизации вставки блоков. Этот процесс реализован в данной программе.</p>
+<p class="lead">В качестве исходных данных приложение использует текстовый файл УП. По заданному алгоритму происходит поиск мест вставки блоков. После этого УП можно сохранить. Также есть возможность изменить параметры блока.</p></div>
+</div>
+</div>
+</div>
+
+
+
+
 
 <div class="tab-pane fade" id="mentor">
 
@@ -126,7 +241,8 @@ height: auto;
 <div class="row">
 
 <div class="col-md-4">
- <img src="images/myPic/IMG_20200313_114852.jpg" alt="myPhoto"   class="thumbnail"></div>
+  <a rel="simplebox" href="images/myPic/IMG_20200313_114852.jpg">
+ <img src="images/myPic/IMG_20200313_114852.jpg" alt="myPhoto"   class="thumbnail"></a></div>
 <div class="col-md-8">
 
 <p class="lead">Я решил стать наставником, так как в процессе моей трудовой деятельности
@@ -190,7 +306,24 @@ function showSertificates() {
     });
 };
 </script> -->
+
 </div>
+
+<script type="text/javascript" src="simplebox/simplebox_util.js"></script>
+<script type="text/javascript">
+(function(){
+var boxes=[],els,i,l;
+if(document.querySelectorAll){
+els=document.querySelectorAll('a[rel=simplebox]');  
+Box.getStyles('simplebox_css','simplebox/simplebox.css');
+Box.getScripts('simplebox_js','simplebox/simplebox.js',function(){
+simplebox.init();
+for(i=0,l=els.length;i<l;++i)
+simplebox.start(els[i]);
+simplebox.start('a[rel=simplebox_group]');      
+});
+}
+})();</script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="bootstrap/js/bootstrap.js"></script>
 
